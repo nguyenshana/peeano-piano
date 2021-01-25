@@ -393,19 +393,19 @@ function mouseClicked()
 	}
 
 	// display recordings below the piano
-	let recordingsArray = currentUser.getRecordings();
-	fill(0);
-	for(let nn = 0; nn < recordingsArray.length; nn++) 
-	{
-	  let index = textY + 90;
-	  text(`Recording #${nn + 1}`, textX + (nn * 200), index - 30);
-	  let keys = Object.keys(recordingsArray[nn]);
-	  keys.forEach(key=>{
-	    let note = recordingsArray[nn][key].getNote();
-	    text(`${key}ms --> ${note}`, textX + (nn * 200), index);
-	    index += 20;
-	  });
-	}
+// 	let recordingsArray = currentUser.getRecordings();
+// 	fill(0);
+// 	for(let nn = 0; nn < recordingsArray.length; nn++) 
+// 	{
+// 	  let index = textY + 90;
+// 	  text(`Recording #${nn + 1}`, textX + (nn * 200), index - 30);
+// 	  let keys = Object.keys(recordingsArray[nn]);
+// 	  keys.forEach(key=>{
+// 	    let note = recordingsArray[nn][key].getNote();
+// 	    text(`${key}ms --> ${note}`, textX + (nn * 200), index);
+// 	    index += 20;
+// 	  });
+// 	}
 
 } // end mouseClicked()
 
